@@ -22,10 +22,10 @@
                     <li class="nav-item"><a class="nav-link" href="#portfolio" id="food">Food</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact" id="cont">Contact</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="languageToggle">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Language
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                        <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="#" onclick="changeLanguage('eng')">English</a></li>
                           <li><a class="dropdown-item" href="#" onclick="changeLanguage('ger')">Deutsch</a></li>
                           <li><a class="dropdown-item" href="#" onclick="changeLanguage('ara')">Arabic</a></li>
@@ -39,7 +39,7 @@
         <div class="container my-auto" style = "position:relative; top:-30px">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <h1 class="text-uppercase" style="color: #dfb951c8" ><strong style="font-style:Montserrat;">Orient Palace Restaurant</strong></h1>
+                    <h1 class="text-uppercase" style="color: #dfb951c8" ><strong style="font-style: Montserrat">Orient Palace Restaurant</strong></h1>
                     <hr>
                 </div>
             </div>
@@ -112,25 +112,13 @@
             about: "Über uns",
             food: "Essen",
             contact: "Kontakt",
-            language: "Sprache",
+            languageToggle: "Sprache",
             cousine: "Arabische Küche",
             findOut: "Entdecken Sie mehr",
             discover: "Entdecken Sie unsere Speisekarte",
             ingredients: "Frische Zutaten, die täglich von unserem hochqualifizierten Küchenteam zubereitet werden",
             menu: "Speisekarte",
             getInTouch: "Kontaktieren Sie uns!"
-          },
-          ara: {
-            about: "1",
-            food: "2",
-            contact: "3",
-            language: "4",
-            cousine: "5",
-            findOut: "6",
-            discover: "7",
-            ingredients: "8",
-            menu: "9",
-            getInTouch: "10"
           }
         };
       
@@ -139,7 +127,7 @@
             ab.textContent = language.ger.about;
             food.textContent = language.ger.food;
             cont.textContent = language.ger.contact;
-            languageToggle.textContent = language.ger.language;
+            navbarDarkDropdownMenuLink.textContent = language.ger.languageToggle;
             cousine.textContent = language.ger.cousine;
             findOut.textContent = language.ger.findOut;
             discover.textContent = language.ger.discover;
