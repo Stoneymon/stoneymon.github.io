@@ -14,8 +14,8 @@
 </head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="57">
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#page-top">
                 <img src="assets/img/logo.png" class="img-fluid" width="180px" height="90px">
             </a>
@@ -28,14 +28,14 @@
                     <li class="nav-item"><a class="nav-link" href="#portfolio" id="food">Food</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact" id="cont">Contact</a></li>
                     <li class="nav-item dropdown">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                           Language
                         </a>
-                        <div class="dropdown-menu show" aria-labelledby="dropdownMenuLink">
-                          <a class="dropdown-item" href="#" onclick="changeLanguage('eng')">English</a>
-                          <a class="dropdown-item" href="#" onclick="changeLanguage('ger')">Deutsch</a>
-                          <a class="dropdown-item" href="#" onclick="changeLanguage('ara')">Arabic</a>
-                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="#" onclick="changeLanguage('eng')">English</a></li>
+                          <li><a class="dropdown-item" href="#" onclick="changeLanguage('ger')">Deutsch</a></li>
+                          <li><a class="dropdown-item" href="#" onclick="changeLanguage('ara')">Arabic</a></li>
+                        </ul>
                       </li>
                 </ul>
             </div>
