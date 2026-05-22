@@ -1,173 +1,214 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Orient Palace Restaurant</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic&amp;display=swap">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<!--    <meta name="viewport" content="width=device-width, initial-scal, e=1.0, shrink-to-fit=no">-->
+    <title>Benedikt Steiningers Portfolio</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"> <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css"> <!-- # burger menu icon -->
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic&amp;display=swap">-->
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/portfolio-style.css">
 </head>
 
-<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="57">
-    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#page-top">
-                <img src="assets/img/logo.png" class="img-fluid" width="180px" height="90px">
-            </a>
-            <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#about" id="ab">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio" id="food">Food</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact" id="cont">Contact</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                          Language
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="#" onclick="changeLanguage('eng')">English</a>
-                            <a class="dropdown-item" href="#" onclick="changeLanguage('ger')">Deutsch</a>
-                            <a class="dropdown-item" href="#" onclick="changeLanguage('ara')">Arabic</a>
-                        </div>
-                    </li>
+<body id="page-top">
+
+    <a class="menu-toggle rounded" style="z-index: 800;" href="#"><i class="fa fa-bars"></i></a>
+
+    <nav class="navbar navbar-light navbar-expand" style="z-index: 700;" id="sidebar-wrapper">
+        <div class="container"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="sidebar-nav"></button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav sidebar-nav" id="sidebar-nav">
+                    <li class="nav-item sidebar-brand"><a class="nav-link active js-scroll-trigger" href="#page-top">Benedikt Steininger Portfolio</a></li>
+                    <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#roadgpt">RoadGPT</a></li>
+                    <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#flexcrash">EU Project Flexcrash</a></li>
+                    <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#tsa">EV Charging Station Time Series Analysis</a></li>
+                    <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#pixel_academy">Pixel Academy</a></li>
+<!--                    <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>-->
+<!--                    <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>-->
                 </ul>
             </div>
         </div>
     </nav>
-    <header class="text-center text-white d-flex masthead" style="position:relative; background-image:url('assets/img/thumbnails/herbs-spices-black_67618-925.jpg');">
-        <div class="container my-auto" style = "position:relative; top:-50px">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <h1 class="text-uppercase" style="color: #dfb951c8" ><strong style="font-style: Montserrat">Orient Palace Restaurant</strong></h1>
-                    <hr>
-                </div>
-            </div>
-            <div class="col-lg-8 mx-auto">
-                <b class="text-faded mb-5" id="cousine" style="font-size: x-large; color:#dfb951c8;">Arabic Cuisine</b>
-            </div>
-        </div>
-    </header>
-    <section id="about" class="bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col offset-lg-8 text-center mx-auto">
-                    <h2 class="text-white section-heading" id="discover">Discover our menu</h2>
-                    <hr class="light my-4">
-                    <p class="text-faded mb-4" id="ingredients">Fresh ingredients that are prepared daily by our highly trained kitchen staff</p>
-                    <a class="btn btn-light btn-xl" role="button" href="assets/downloads/Orient_Menü.pdf" download="Orient_Palace_Menu" id="menu">Menu</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="portfolio" class="p-0">
-        <div class="container-fluid p-0">
-            <div class="row g-0 popup-gallery">
-                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/fullsize/1.jpg"><img class="img-fluid" src="assets/img/thumbnails/1.jpg">
-                    </a></div>
-                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/fullsize/2.jpg"><img class="img-fluid" src="assets/img/thumbnails/2.jpg">
-                    </a></div>
-                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/fullsize/3.jpg"><img class="img-fluid" src="assets/img/thumbnails/3.jpg">
-                    </a></div>
-                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/fullsize/4.jpg"><img class="img-fluid" src="assets/img/thumbnails/4.jpg">
-                    </a></div>
-                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/fullsize/5.jpg"><img class="img-fluid" src="assets/img/thumbnails/5.jpg">
-                    </a></div>
-                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/fullsize/6.jpg"><img class="img-fluid" src="assets/img/thumbnails/6.jpg">
-                    </a></div>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 text-center mx-auto">
-                    <h2 class="section-heading" id="getInTouch">Let's Get In Touch!</h2>
-                    <hr class="my-4">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 text-center ms-auto"><i class="fa fa-phone fa-3x mb-3 sr-contact" data-aos="zoom-in" data-aos-duration="300" data-aos-once="true"></i>
-                    <p>01 9555561</p>
-                </div>
-                <div class="col-lg-4 text-center me-auto"><i class="fa fa-envelope-o fa-3x mb-3 sr-contact" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="300" data-aos-once="true"></i>
-                    <p><a href="mailto:your-email@your-domain.com">office.orientpalacewien@gmail.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
-    <script src="assets/js/creative.js"></script>
-    <script>
-        function changeLanguage(lang) {
-          location.hash = lang;
-          location.reload();
-        }
 
-        var language = {
-          ger: {
-            about: "Über uns",
-            food: "Essen",
-            contact: "Kontakt",
-            languageToggle: "Sprache",
-            cousine: "Arabische Küche",
-            findOut: "Entdecken Sie mehr",
-            discover: "Entdecken Sie unsere Speisekarte",
-            ingredients: "Frische Zutaten, die täglich von unserem hochqualifizierten Küchenteam zubereitet werden",
-            menu: "Speisekarte",
-            getInTouch: "Kontaktieren Sie uns!"
-          },
-           
-           ara: {
-            about: "عنا",
-            food: "الطعام",
-            contact: "التواصل",
-            languageToggle: "اللغة",
-            cousine: "مطبخ عربي",
-            findOut: "إكتشف أكثر",
-            discover: "اكتشف قائمة الطعام",
-            ingredients: "يتم تحضير الطعام الطازج يوميا من قبل طاقم المطبخ ذو الخبرة",
-            menu: "قائمة الطعام",
-            getInTouch: "اتصل بنا"
-          }
-        };
-        
-      
-        if (window.location.hash) {
-          if (window.location.hash == "#ger") {
-            ab.textContent = language.ger.about;
-            food.textContent = language.ger.food;
-            cont.textContent = language.ger.contact;
-            dropdownMenuLink.textContent = language.ger.languageToggle;
-            cousine.textContent = language.ger.cousine;
-            findOut.textContent = language.ger.findOut;
-            discover.textContent = language.ger.discover;
-            ingredients.textContent = language.ger.ingredients;
-            menu.textContent = language.ger.menu;
-            getInTouch.textContent = language.ger.getInTouch;
-          }
-          else if (window.location.hash == "#ara") {
-            ab.textContent = language.ara.about;
-            food.textContent = language.ara.food;
-            cont.textContent = language.ara.contact;
-            dropdownMenuLink.textContent = language.ara.language;
-            cousine.textContent = language.ara.cousine;
-            discover.textContent = language.ara.discover;
-            ingredients.textContent = language.ara.ingredients;
-            menu.textContent = language.ara.menu;
-            getInTouch.textContent = language.ara.getInTouch;
-          }
-        }
-      </script>
+    <div>
+        <section class="container-fluid px0" style=""margin: 0; padding:0;>
+            <img src="assets/img/bg.jpg" id="bg" class="img-fluid">
+            <img src="assets/img/moon.png" id="moon" class="img-fluid">
+            <img src="assets/img/mountain.png" id="mountain" class="img-fluid">
+            <img src="assets/img/road.png" id="road" class="img-fluid">
+            <h2 id="text" style="color: black; -webkit-text-stroke-color: #1a1e21; font-size: 10vw;">Benedikt Steininger</h2>
+        </section>
+    </div>
+
+<!--    ## MY INTRO HEADER ##-->
+
+<!--    background-image: url('assets/bg/bg-main.png');-->
+
+    <div class="container-fluid" style="vertical-align:middle; padding-top: 4rem; padding-bottom: 2rem;">
+        <div class="row">
+            <div class="col-6 my-auto" style="padding: 0">
+                    <img src="assets/img/Steininger_Benedikt.jpg" style="width: 15vw; display: block; margin: 0 auto;" id="working" class="img-fluid">
+            </div>
+            <div class="col-6 my-auto" style="padding: 0">
+                <!-- <h2 style="vertical-align:middle; color: white;  font-size: 6vw;">Student<span style="color: #facc88;">.</span> <br>
+                    Agile Software Developer<span style="color: #facc88;">.</span><br><br>
+                </h2> ;-->
+                 <h2 style="vertical-align:middle; color: white;  font-size: 6vw;">Data Scientist<span style="color: #facc88;">.</span> <br>
+                </h2>
+                <h2 style="color: #facc88; font-size: 4.5vw;">Join me on my journey through coding.</h2>
+            </div>
+        </div>
+    </div>
+
+  <div id="portfolio" class="container-fluid content-section">
+        <div class="content-section-heading text-center" >
+            <hr class="rounded">
+            <h3 class="mb-0" style="font-size: 3rem; padding-top: 2rem; padding-bottom: 2rem; color: white;">Projects</h3>
+        </div>
+        <div class="row g-0">
+            <div class="col-lg-6"><a class="portfolio-item" href="#roadgpt">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <h2 style="font-size: 2rem">RoadGPT</h2>
+                        </div>
+                    </div><img class="img-fluid" src="assets/img/road_simulation.jpg" style="margin:auto; display: block; width: 700px; height: auto">
+                </a></div>
+            <div class="col-lg-6"><a class="portfolio-item" href="#flexcrash">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <h2 style="font-size: 2rem; color: white">EU Project Flexcrash</h2>
+                        </div>
+                    </div><img class="img-fluid" src="assets/img/car-crash.png" style="margin:auto; display: block;">
+                </a></div>
+            <div class="col-lg-6"><a class="portfolio-item" href="#tsa">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <h2 style="font-size: 2rem;">EV Charging Demand Forecasting</h2>
+                        </div>
+                    </div><img class="img-fluid" src="assets/img/ev_charging.png" style="margin:auto; display: block;">
+                </a></div>
+            <div class="col-lg-6"><a class="portfolio-item" href="#pixel_academy">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <h2 style="font-size: 2rem;">Pixel Academy</h2>
+                        </div>
+                    </div><img class="img-fluid" src="assets/img/pixel_academy_thumbnail.png" style="margin:auto; display: block;">
+                </a></div>
+        </div>
+    </div>
+
+<!--    #facc88-->
+
+    <div class="container-fluid full" id="roadgpt" style="padding-bottom: 3rem;">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 my-auto" style="padding: 0">
+                        <div class="content-section-heading hidden-left"><h3 class="mb-0" style="font-size: 5vw; padding-top: 2rem; padding-bottom: 1rem; color: #facc88;">RoadGPT</h3>
+                        </div>
+                    <h5 style="color: ghostwhite; font-size: 3vw;"> A Program that takes Textual Descriptions of Roads and builds these 3D-Roads in BeamNG.tech to test autonomous driving agents. <br></h5>
+                            <p style="color: ghostwhite; font-size: 2vw">RoadGPT is the Title of my Bachelors Thesis, which was published at the ICSE 2025 New Ideas and Emerging Results (NIER) Track and presented  by my thesis supervisor Dr. Alessio Gambi.</p>
+                            <p style="color: ghostwhite; font-size: 1vw">Creating simulation test scenarios for autonomous vehicles had 2 main issues: existing approaches relied on complicated algorithms and heuristics, and they only created 2D-roads. RoadGPT aimed at solving these issues, adding the third dimension to testing scenarios and making the creation of testing scenarios accessible to everyone by taking natural language descriptions of roads and converting them to simulation scenarios.</p>
+                </div>
+                <div class="col-6 my-auto hidden-down" style="padding: 0">
+                    <!-- <iframe
+                        style="width: 24vw; height: 14vw; display: block; margin-left: auto;" 
+                        src="https://www.youtube.com/embed/sMSPZ02p0sc" 
+                        frameborder="0" 
+                        allowfullscreen>
+                    </iframe> -->
+                    <iframe width="560" height="315" style="margin-left: auto;" src="https://www.youtube.com/embed/sMSPZ02p0sc?si=4IojvnAtCONt7U2m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p style="text-align: right; padding-top: 0.5rem;">
+                        <a href="https://github.com/Stoneymon/RoadGPT" style="text-decoration: none; color: #facc88;">Go To Github Repository</a>
+                    </p>
+                    <p style="text-align: right;">
+                        <a href="https://dl.acm.org/doi/10.1109/ICSE-NIER66352.2025.00021" style="text-decoration: none; color: #facc88;">Publication - Automatically Generating Content for Testing Autonomous Vehicles from User Descriptions</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid full" id="flexcrash" style="padding-top: 3rem; padding-bottom: 3rem;">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 my-auto" style="padding: 0">
+                    <h5 style="color: ghostwhite; padding-top: 2rem; font-size: 3vw;"> The Flexcrash project is focused on the development of a flexible and hybrid manufacturing technology to produce tailored adaptive crash-tolerant structures made of green aluminium alloys. </h5>
+                    <p style="color: ghostwhite; padding-top: 2rem; font-size: 2vw;"> With the IMC FH Krems Research Team, I developed a web application using HTML, JavaScript, Python, MPLD3, Flask and SQL to create road scenario simulations to gather driving and crash data.</p>
+                </div>
+                <div class="col-6 my-auto hidden-right" style="padding: 0">
+                    <div class="content-section-heading hidden-left"><h3 class="mb-0" style="text-align: right; font-size: 5vw; padding-top: 2rem; padding-bottom: 2rem; color: #facc88;">EU Project Flexcrash</h3></div>
+                    <p style="text-align: right;"><a href="https://flexcrash-project.eu/" style="text-decoration: none; color: #facc88;">Go To Flexcrash Website</a></p>
+                    <p style="text-align: right;"><a href="https://publications.ait.ac.at/de/publications/the-flexcrash-platform-for-testing-autonomous-vehicles-in-mixed-t/" style="text-decoration: none; color: #facc88;">Publication - The Flexcrash Platform for Testing Autonomous Vehicles in Mixed-Traffic Scenarios</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid full" id="tsa" style="vertical-align:middle; padding-bottom: 3rem;">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 my-auto" style="padding: 0">
+                    <div class="content-section-heading hidden-left"><h3 class="mb-0" style="font-size: 5vw; padding-top: 2rem; padding-bottom: 2rem; color: #facc88;">EV Charging Demand Forecasting</h3></div>
+                    <h5 style="color: ghostwhite; padding-top: 2rem; font-size: 2vw;"> A university capstone project in partnership with Siemens, where our team of 4 analyzed real-world charging station data from Seestadt Aspern to predict hourly electricity demand.</h5>
+                    <p style="color: ghostwhite; padding-top: 2rem; font-size: 1vw;"> Starting from raw data, we handled the full pipeline: exploration, cleaning, and preprocessing. We then built and compared multiple forecasting models accounting for seasonal, weekly, and daily demand patterns.<br>The goal of this project was to optimize when to charge a local battery via solar panels, minimizing the power drawn from the grid by predicting peak demand before it happens.</p>
+                </div>
+                <div class="col-6 my-auto hidden-down" style="padding-left: 11vw;padding-top: 1.5rem;">
+                    <img src="assets/img/ev_charging.jpg" style="width: 24vw; display: block; margin-left: auto;" class="img-fluid">
+                    <p style="font-size: 1vw; text-align: right; padding-top: 0.5rem;">
+                        <a target="_blank" href="https://github.com/Stoneymon/Time-Series-Analysis-and-Forecasting" style="text-decoration: none; color: #facc88;">Go To Github Repository</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="pixel_academy" style="vertical-align:middle">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 my-auto" style="padding: 0">
+                    <h5 style="color: ghostwhite; padding-top: 1rem; font-size: 3vw;">Pixel Academy is a gamified Python learning experience built during the Heilbronn 2023 Blended Intensive Program, a cross-university collaboration between students from 3 institutions.</h5>
+                    <p style="color: ghostwhite; font-size: 2vw">Working in a team of 6, we designed a Super Mario-style platformer where players explore levels collecting hint boxes that introduce Python concepts. Each level ends with a quiz: three pipes represent the answer choices, and you run your character into the right one.</p>
+                </div>
+                <div class="col-6 my-auto hidden-right" style="padding: 0">
+                    <div class="content-section-heading hidden-left no-overlap"><h3 class="mb-0" style="text-align: right; font-size: 5vw; padding-top: 2rem; padding-bottom: 1rem; color: #facc88;">Pixel<br>Academy</h3>
+                        <p style="text-align: right; padding-top: 1rem; font-size: 1vw;"><a href="https://github.com/welle-dev-duck/bip-pixel-academy-2023" style="text-decoration: none; color: #facc88;">Go To Github Repository</a></p>
+                        <p style="text-align: right; padding-top: 1rem; font-size: 1vw;"><a href="https://p422l.itch.io/pixel-academy" style="text-decoration: none; color: #facc88;">Play the Game on itch.io</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pixel_academy2" class="container-fluid" style="padding-top: 1rem; padding-bottom: 2rem;">
+        <div id="carousel-1" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/pixel_academy.jpg" alt="Slide Image" /></div>
+                <div class="carousel-item"><img class="w-100 d-block" src="assets/img/pixel_academy_hint.jpg" alt="Slide Image" /></div>
+                <div class="carousel-item"><img class="w-100 d-block" src="assets/img/pixel_academy_quiz.jpg" alt="Slide Image" /></div>
+            </div>
+        <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></a></div>
+        <ol class="carousel-indicators">
+            <li class="active" data-bs-target="#carousel-1" data-bs-slide-to="0"></li>
+            <li data-bs-target="#carousel-1" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carousel-1" data-bs-slide-to="2"></li>
+        </ol>
+        </div>
+    </div>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <ul class="list-inline mb-5">
+                <li class="list-inline-item">&nbsp;<a class="link-light social-link rounded-circle" href="https://www.linkedin.com/in/benedikt-steininger/"><i class="icon-social-linkedin"></i></a></li>
+                <li class="list-inline-item">&nbsp;<a class="link-light social-link rounded-circle" href="https://github.com/Stoneymon><i class="icon-social-github"></i></a></li>
+                <li class="list-inline-item">&nbsp;<a class="link-light social-link rounded-circle" href="mailto:benedikt.steininger@outlook.de"><i class="icon-envelope"></i></a></li>
+            </ul>
+        </div><a class="js-scroll-trigger scroll-to-top rounded" href="#page-top"><i class="fa fa-angle-up"></i></a>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/portfolio-script.js"></script>
 </body>
 
 </html>
