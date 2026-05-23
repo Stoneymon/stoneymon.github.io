@@ -54,7 +54,7 @@ hr.rounded {
 }
 body {
     /*background: var(--main);*/
-    background-image: url("bg/bg-main.png");
+    background-image: url("bg/bg-main.webp");
     min-height: 1500px;
     overflow-x: hidden !important;
     margin: 0;
